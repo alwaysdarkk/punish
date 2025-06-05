@@ -1,0 +1,16 @@
+[versions]
+spigot = "1.8.8-R0.1-SNAPSHOT"
+inventory-framework = "6f6a634cc5478a16ff81773ed8018"
+commands = "0.5.1-SNAPSHOT"
+configurate = "4.2.0"
+exposed = "1.0.0-beta-2"
+h2 = "2.2.224"
+
+[libraries]
+spigot = { module = "org.spigotmc:spigot-api", version.ref = "spigot" }
+inventory-framework = { module = "com.github.DevNatan.inventory-framework:inventory-framework", version.ref = "inventory-framework" }
+commands = { module = "co.aikar:acf-bukkit", version.ref = "commands" }
+configurate = { module = "org.spongepowered:configurate-yaml", version.ref = "configurate" }
+exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed" }
+exposed-jdbc = { module = "org.jetbrains.exposed:exposed-jdbc", version.ref = "exposed" }
+h2 = { module = "com.h2database:h2", version.ref = "h2" }

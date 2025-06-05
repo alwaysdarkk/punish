@@ -1,0 +1,9 @@
+database:
+  type: "h2" # mysql or h2
+  mysql:
+    address: "localhost:3306"
+    username: "root"
+    password: ""
+    database: "test"
+  h2:
+    fileName: "database"
