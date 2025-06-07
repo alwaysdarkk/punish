@@ -1,4 +1,4 @@
-package com.github.alwaysdarkk.punish.api.data
+package com.github.alwaysdarkk.punish.api.data.punish
 
 import com.github.alwaysdarkk.punish.api.cache.PunishReasonCache
 import com.github.alwaysdarkk.punish.api.kt.formatDate
@@ -11,7 +11,7 @@ data class Punish(
     val evidence: String? = null,
     val expireDate: Long? = null
 ) {
-    val placeholderMap = mutableMapOf(
+    val placeholderMap = mapOf(
         "id" to id,
         "player" to playerName,
         "author" to author,

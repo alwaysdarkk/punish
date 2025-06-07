@@ -2,8 +2,15 @@ package com.github.alwaysdarkk.punish.api.kt
 
 import org.bukkit.ChatColor
 
-val String.colored: String get() = ChatColor.translateAlternateColorCodes('&', this)
+val String.colored: String
+    get() =
+        ChatColor.translateAlternateColorCodes('&', this).ifBlank { " " }
 
-fun List<String>.withPlaceholders(placeholders: Map<String, String>): List<String> = map {
-    placeholders.entries.fold(it) { line, (key, value) -> line.replace("{$key}", value) }.colored
-}.map { it.ifBlank { " " } }
+fun String.withPlaceholders(placeholders: Map<String, String>): String {
+    return placeholders.entries.fold(this) { line, (key, value) ->
+        line.replace("{$key}", value)
+    }.colored
+}
+
+fun List<String>.withPlaceholders(placeholders: Map<String, String>) =
+    map { it.withPlaceholders(placeholders) }

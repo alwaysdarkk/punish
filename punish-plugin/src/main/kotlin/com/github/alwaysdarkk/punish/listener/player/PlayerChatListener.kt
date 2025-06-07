@@ -1,8 +1,8 @@
-package com.github.alwaysdarkk.punish.listener
+package com.github.alwaysdarkk.punish.listener.player
 
 import com.github.alwaysdarkk.punish.api.cache.MessageCache
 import com.github.alwaysdarkk.punish.api.cache.PunishCache
-import com.github.alwaysdarkk.punish.api.data.PunishType
+import com.github.alwaysdarkk.punish.api.data.punish.PunishType
 import org.bukkit.event.EventHandler
 import org.bukkit.event.EventPriority
 import org.bukkit.event.Listener

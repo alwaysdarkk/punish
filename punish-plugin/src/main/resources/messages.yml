@@ -1,4 +1,9 @@
 messages:
+  select-evidence-message:
+    - ""
+    - "&e Informe uma prova para a punição."
+    - "&7 digite 'cancelar' para cancelar."
+    - ""
   ban-disconnect-message:
     - ""
     - "&c Você está banido do servidor."

@@ -1,0 +1,54 @@
+icons:
+  current-reason-icon:
+    display-name: "&c{name}"
+    lore:
+      - "&7Aplique a punição no jogador &f{player}"
+      - "&7utilizando este motivo."
+      - ""
+      - "&f Tipo: &7{type}"
+      - "&f Duração: &7{duration}"
+      - ""
+      - "&cEste é o motivo atual."
+  without-permission-icon:
+    display-name: "&c{name}"
+    lore:
+      - "&7Aplique a punição no jogador &f{player}"
+      - "&7utilizando este motivo."
+      - ""
+      - "&f Tipo: &7{type}"
+      - "&f Duração: &7{duration}"
+      - ""
+      - "&cVocê não tem permissão para isto."
+  with-permission-icon:
+    display-name: "&a{name}"
+    lore:
+      - "&7Aplique a punição no jogador &f{player}"
+      - "&7utilizando este motivo."
+      - ""
+      - "&f Tipo: &7{type}"
+      - "&f Duração: &7{duration}"
+      - ""
+      - "&aClique para selecionar este motivo."
+  evidence-icon:
+    slot: 48
+    material: "339:0"
+    display-name: "&eProva"
+    lore:
+      - "&7Informe uma prova para"
+      - "&7esta punição."
+      - ""
+      - "&f Atual: &7{evidence}"
+      - ""
+      - "&eClique para alterar."
+  confirm-icon:
+    slot: 50
+    material: "351:10"
+    display-name: "&aConfirmar"
+    lore:
+      - "&7Clique aqui para aplicar"
+      - "&7esta punição."
+      - ""
+      - "&f Jogador: &7{player}"
+      - "&f Motivo: &7{reason}"
+      - "&f Prova: &7{evidence}"
+      - ""

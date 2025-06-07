@@ -2,9 +2,9 @@ package com.github.alwaysdarkk.punish.api.handler
 
 import com.github.alwaysdarkk.punish.api.cache.MessageCache
 import com.github.alwaysdarkk.punish.api.cache.PunishCache
-import com.github.alwaysdarkk.punish.api.data.Punish
-import com.github.alwaysdarkk.punish.api.data.PunishReason
-import com.github.alwaysdarkk.punish.api.data.PunishType
+import com.github.alwaysdarkk.punish.api.data.punish.Punish
+import com.github.alwaysdarkk.punish.api.data.punish.PunishReason
+import com.github.alwaysdarkk.punish.api.data.punish.PunishType
 import com.github.alwaysdarkk.punish.api.repository.PunishRepository
 import org.apache.commons.lang.RandomStringUtils
 import org.bukkit.Bukkit

@@ -1,25 +1,22 @@
 package com.github.alwaysdarkk.punish.command
 
 import co.aikar.commands.BaseCommand
-import co.aikar.commands.annotation.*
-import com.github.alwaysdarkk.punish.api.cache.PunishReasonCache
-import com.github.alwaysdarkk.punish.api.handler.PunishHandler
-import org.bukkit.command.CommandSender
+import co.aikar.commands.annotation.CommandAlias
+import co.aikar.commands.annotation.CommandPermission
+import co.aikar.commands.annotation.Default
+import co.aikar.commands.annotation.Syntax
+import com.github.alwaysdarkk.punish.api.PUNISH_PLAYER_KEY
+import com.github.alwaysdarkk.punish.view.PunishView
+import me.saiintbrisson.minecraft.ViewFrame
+import org.bukkit.entity.Player
 
 @CommandAlias("punir")
-class PunishCommand : BaseCommand() {
+class PunishCommand(private val viewFrame: ViewFrame) : BaseCommand() {
 
     @Default
     @CommandPermission("punish.use")
-    @Syntax("<jogador> <id> [prova]")
-    fun execute(sender: CommandSender, playerName: String, reasonId: String, @Optional evidence: String?) {
-        val reason = PunishReasonCache.find(reasonId)
-            ?: return sender.sendMessage("§cEste motivo não foi encontrado.")
-
-        if (evidence == null && !sender.hasPermission("punish.evidence.bypass")) {
-            return sender.sendMessage("§cVocê não tem permissão para isto.")
-        }
-
-        PunishHandler.handle(playerName, sender.name, reason, evidence)
+    @Syntax("<jogador>")
+    fun execute(player: Player, playerName: String) {
+        viewFrame.open(PunishView::class.java, player, mapOf(PUNISH_PLAYER_KEY to playerName))
     }
 }

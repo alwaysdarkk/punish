@@ -1,5 +1,5 @@
 database:
-  type: "h2" # mysql or h2
+  type: "h2" # mysql ou h2
   mysql:
     address: "localhost:3306"
     username: "root"

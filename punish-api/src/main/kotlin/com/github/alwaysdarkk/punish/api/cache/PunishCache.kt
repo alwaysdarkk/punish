@@ -1,7 +1,7 @@
 package com.github.alwaysdarkk.punish.api.cache
 
-import com.github.alwaysdarkk.punish.api.data.Punish
-import com.github.alwaysdarkk.punish.api.data.PunishType
+import com.github.alwaysdarkk.punish.api.data.punish.Punish
+import com.github.alwaysdarkk.punish.api.data.punish.PunishType
 
 object PunishCache {
 

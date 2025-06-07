@@ -3,13 +3,19 @@ reasons:
     name: "Flood"
     permission: "punish.flood"
     type: "MUTE" # BAN ou MUTE
+    slot: 1
+    material: "1:0"
     duration: 1 # em minutos
   hack:
     name: "Uso de hack"
     permission: "punish.hack"
     type: "BAN"
+    slot: 2
+    material: "1:1"
   bug-abuse:
     name: "Abuso de bugs"
     permission: "punish.bug-abuse"
     type: "BAN"
+    slot: 3
+    material: "1:2"
     duration: 1

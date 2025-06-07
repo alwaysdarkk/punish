@@ -1,6 +1,6 @@
 package com.github.alwaysdarkk.punish.api.repository
 
-import com.github.alwaysdarkk.punish.api.data.Punish
+import com.github.alwaysdarkk.punish.api.data.punish.Punish
 import com.github.alwaysdarkk.punish.api.repository.provider.RepositoryProvider.coroutineScope
 import com.github.alwaysdarkk.punish.api.repository.table.PunishTable
 import kotlinx.coroutines.Dispatchers

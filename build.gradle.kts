@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.github.alwaysdarkk"
-version = "1.0.0"
+version = "1.0.1"
 
 allprojects {
     apply(plugin = "kotlin")

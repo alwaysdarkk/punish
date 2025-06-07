@@ -1,6 +1,6 @@
 package com.github.alwaysdarkk.punish.api.cache
 
-import com.github.alwaysdarkk.punish.api.data.PunishReason
+import com.github.alwaysdarkk.punish.api.data.punish.PunishReason
 
 object PunishReasonCache {
 
