@@ -5,6 +5,7 @@ commands = "0.5.1-SNAPSHOT"
 configurate = "4.2.0"
 exposed = "1.0.0-beta-2"
 h2 = "2.2.224"
+mysql = "8.0.33"
 
 [libraries]
 spigot = { module = "org.spigotmc:spigot-api", version.ref = "spigot" }
@@ -14,3 +15,4 @@ configurate = { module = "org.spongepowered:configurate-yaml", version.ref = "co
 exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed" }
 exposed-jdbc = { module = "org.jetbrains.exposed:exposed-jdbc", version.ref = "exposed" }
 h2 = { module = "com.h2database:h2", version.ref = "h2" }
+mysql = { module = "mysql:mysql-connector-java", version.ref = "mysql" }
